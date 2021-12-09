@@ -2,11 +2,11 @@ package main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import viewcontroller.CalculatedBindingC;
+import viewcontroller.CylinderC;
 
 /**
  * @author David Wandratsch
- * @version 1.0, 25.11.2021, class TheMain
+ * @version 1.0, 02.12.2021, class TheMain
  * @link https://github.com/WandratschDavid/4202_calculatedBinding
  */
 public class TheMain extends Application
@@ -19,6 +19,6 @@ public class TheMain extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        CalculatedBindingC.show(primaryStage);
+        CylinderC.show(primaryStage);
     }
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.CylinderC">
+   <children>
+      <GridPane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <VBox layoutX="10.0" layoutY="104.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="h = " />
+                        <TextField fx:id="txtHeight" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox GridPane.rowIndex="1">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="V = " />
+                        <TextField fx:id="txtVolume" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label text="O = " />
+                        <TextField fx:id="txtSurface" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0">
+                     <children>
+                        <Label text="U = " />
+                        <TextField fx:id="txtScope" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox GridPane.columnIndex="1">
+               <children>
+                  <HBox>
+                     <children>
+                        <Slider fx:id="sliderHeight" orientation="VERTICAL" />
+                        <ImageView fx:id="ivCylinder" fitHeight="150.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../resources/img/cylinder.png" />
+                           </image></ImageView>
+                     </children>
+                  </HBox>
+                  <Slider fx:id="sliderRadius" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="r = " />
+                        <TextField fx:id="txtRadius" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</Pane>
